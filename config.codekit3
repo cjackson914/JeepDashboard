@@ -135,12 +135,23 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
+	"/dev/js/grillanimation.js": {
+		"bF": 4,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/dev/js/grillanimation-min.js",
+		"oF": 1,
+		"sC": 3,
+		"tS": 0
+		},
 	"/dev/js/mountainanimation.js": {
 		"bF": 4,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/dev/js/mountainanimation-min.js",
 		"oF": 1,
 		"sC": 3,
@@ -312,6 +323,14 @@
 		"oF": 2,
 		"oS": 0,
 		"uL": 1
+		},
+	"/gsap-bonus.tgz": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/gsap-bonus.tgz",
+		"oF": 0
 		},
 	"/node_modules": {
 		"ft": 65536,

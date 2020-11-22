@@ -5,3 +5,22 @@
 body {
   background-color: $white;
 }
+
+#mountains{
+  position: relative;
+}
+
+#svg-mountain-draw{
+  position: absolute;
+
+}
+
+#svg-mountain-intro{
+  position: absolute;
+
+}
+
+#svg-grill{
+  position: absolute;
+  // visibility: hidden;
+}

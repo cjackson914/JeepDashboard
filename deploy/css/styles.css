@@ -381,3 +381,15 @@ textarea {
 ============= */
 body {
   background-color: #fff; }
+
+#mountains {
+  position: relative; }
+
+#svg-mountain-draw {
+  position: absolute; }
+
+#svg-mountain-intro {
+  position: absolute; }
+
+#svg-grill {
+  position: absolute; }
