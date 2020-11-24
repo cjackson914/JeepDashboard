@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
+// MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
 
 gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin);
 
@@ -52,8 +53,11 @@ export function mountainAnimation(){
   .to("#Mtn5",{duration:1, fill:"#1D2A3F", stroke:"#1D2A3F"},"-=.75")
   .to("#Mtn6",{duration:1, fill:"#1D2A3F", stroke:"#1D2A3F"},"-=.75")
   .to("#Bkg",{duration:1, fill:"#1D2A3F", stroke:"#1D2A3F"},"-=.75")
-  .to("#JeepLogoFront",{duration:1,fill:"#83A5C7"},"-=1");
+  .to("#JeepLogoFront",{duration:1,fill:"#83A5C7"},"-=1")
 
 
-  // return mountainAnimation;
+  // .to("#GrillRect",{duration:1, morphSVG:"#GrillLines", visibility:"visible"});
+  // .to("#p",{duration:1, morphSVG:"#GrillCircle4Solid"}, "logomorph2");
+
+  return mountainTL;
 }

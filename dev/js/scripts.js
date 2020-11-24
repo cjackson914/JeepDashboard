@@ -8,7 +8,7 @@ gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline();
 mainTL.add(mountainAnimation())
-.add(grillAnimation())
+.add(grillAnimation());
 
 
 GSDevTools.create();

@@ -20,7 +20,21 @@ body {
 
 }
 
+#svg-logo{
+  position: absolute;
+  // z-index: 1000;
+  // visibility: hidden;
+}
+
 #svg-grill{
   position: absolute;
-  // visibility: hidden;
+  visibility: hidden;
+  // #grillRect{
+
+  // }
+}
+
+#svg-grill-copy{
+  position: absolute;
+  visibility: hidden;
 }

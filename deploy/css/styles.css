@@ -391,5 +391,13 @@ body {
 #svg-mountain-intro {
   position: absolute; }
 
-#svg-grill {
+#svg-logo {
   position: absolute; }
+
+#svg-grill {
+  position: absolute;
+  visibility: hidden; }
+
+#svg-grill-copy {
+  position: absolute;
+  visibility: hidden; }
