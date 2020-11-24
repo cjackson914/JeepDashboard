@@ -401,3 +401,6 @@ body {
 #svg-grill-copy {
   position: absolute;
   visibility: hidden; }
+
+#svg-main-dashboard {
+  position: absolute; }

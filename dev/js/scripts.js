@@ -1,6 +1,7 @@
 import {gsap} from "gsap";
 import {mountainAnimation} from "./mountainanimation.js";
 import {grillAnimation} from "./grillanimation.js";
+import {dashAnimation} from "./dashanimation.js";
 
 import {GSDevTools} from "gsap/GSDevTools";
 
@@ -8,7 +9,8 @@ gsap.registerPlugin(GSDevTools);
 
 const mainTL = gsap.timeline();
 mainTL.add(mountainAnimation())
-.add(grillAnimation());
+.add(grillAnimation())
+.add(dashAnimation());
 
 
 GSDevTools.create();
