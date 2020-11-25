@@ -7,10 +7,18 @@ import {GSDevTools} from "gsap/GSDevTools";
 
 gsap.registerPlugin(GSDevTools);
 
+// var song = $("#song")[0];
+
 const mainTL = gsap.timeline();
-mainTL.add(mountainAnimation())
+mainTL
+
+.add(mountainAnimation())
+// .call(playSound())
 .add(grillAnimation())
 .add(dashAnimation());
 
+// function playSound(){
+//     "#song".play();
+// }
 
 GSDevTools.create();

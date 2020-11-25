@@ -12,9 +12,17 @@ export function dashAnimation(){
     
 
   dashTL
+  // .from("#GrillCircle1",{duration:1, alpha:0, visibility:"visible"})
+  // .to("#GrillCircle1Solid",{duration:1, alpha:0})
+  .to("#GrillCircle1Solid",{duration:1, fill:"45342C"},"circlecolor")
+  .to("#GrillCircle4Solid",{duration:1, fill:"45342C"},"circlecolor")
+
+  .to("#GrillCircle1Solid",{duration:1, morphSVG:"#SpeedCircle"},"topo")
+  .to("#GrillCircle4Solid",{duration:1, morphSVG:"#RPMCircle"},"topo")
+  // .to("#GrillCircle1Solid",{duration:1, morphSVG:"#SpeedCircle", fill:"none", stroke:"#45342C", stroke-width:"6"})
 
 
-  .to("#GrillCircle1Solid, #GrillCircle4Solid",{duration:1, alpha:0},"topo")
+  // .to("#GrillCircle1Solid, #GrillCircle4Solid",{duration:1, alpha:0},"topo")
 
   .to("#GrillDivided",{duration:1, alpha:0, scaleY:0, transformOrigin:"0% 50%"},"topo")
   .from("#Topo5",{duration:1, drawSVG:"40% 40%"},"topo")
@@ -25,8 +33,8 @@ export function dashAnimation(){
   .from("#Topo6",{duration:1, drawSVG:0},"topo2")
   .from("#Topo4",{duration:1, drawSVG:0},"topo2")
 
-  .from("#SpeedCircle",{duration:1, alpha:0, scale:.2},"circles")
-  .from("#RPMCircle",{duration:1, alpha:0, scale:.2},"circles")
+  // .from("#SpeedCircle",{duration:1, alpha:0, scale:.2},"circles")
+  // .from("#RPMCircle",{duration:1, alpha:0, scale:.2},"circles")
   .from("#SpeedInnerCircle",{duration:1, alpha:0},"innercircles")
   .from("#RPMInnerCircle",{duration:1, alpha:0},"innercircles")
   .from("#SpeedLines",{duration:1, alpha:0},"dashlines")
@@ -37,7 +45,6 @@ export function dashAnimation(){
   .from("#FuelBtm",{duration:1, alpha:0, y:-40},"dashlines")
   .from("#FuelNumbers",{duration:1, alpha:0},"drawtoplines")
   .from("#FuelTop",{duration:1, drawSVG:0},"drawtoplines")
-  .from("#SpeedTop",{duration:1, drawSVG:0},"drawtoplines")
   .from("#SpeedTop",{duration:1, drawSVG:0},"drawtoplines")
   .from("#RPMTop",{duration:1, drawSVG:0},"drawtoplines")
 
@@ -53,20 +60,19 @@ export function dashAnimation(){
   // .from("#temp-72º",{duration:1, alpha:0},"-=.6") 
   // .from("#ALT",{duration:1, alpha:0, x:-25},"mtncontent") 
 
-  .from("#Sun",{duration:1, alpha:0, y:450},"mtncontent")  
+  .from("#Sun",{duration:1, alpha:0, y:450},"RPMcontent")  
   .from("#temp-72º",{duration:1, alpha:0},"-=.6") 
-  .from("#ALT",{duration:1, alpha:0, x:-25},"mtncontent") 
+  .from("#ALT",{duration:1, alpha:0, x:-25},"RPMcontent") 
   
   .from("#Time",{duration:1, alpha:0, scale:1, transformOrigin:"50% bottom"})
-  .from("#Date",{duration:1, alpha:0})
+  .from("#Date",{duration:1, alpha:0},"-=.75")
 
   .from("#NavPathBlue",{duration:1, drawSVG:0})
-  .from("#Arrow",{duration:.5, alpha:0})
+  .from("#Arrow",{duration:.5, alpha:0, scaleY:0, transformOrigin:"50% 0%"},"arrow")
+  .from("#Compass",{duration:.5, alpha:0, scaleY:0, transformOrigin:"0% 50%"},"arrow")
   .from("#NavPathOrange",{duration:1, drawSVG:0},"-=.25")
 
-  .from("#Compass",{duration:.5, alpha:0, scaleY:0, transformOrigin:"0% 50%"})
-  // .to("#GrillCircle1Solid",{duration:1, morphSVG:"SpeedCircle"})
-  // .to("#GrillCircle4Solid",{duration:1, morphSVG:"RPMCircle"})
-  // .to("#GrillCircle1Solid",{duration:1, morphSVG:"#SpeedCircle", fill:"none", stroke:"#45342C", stroke-width:"6"});
+
+
   return dashTL;
 }

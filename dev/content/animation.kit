@@ -1,4 +1,14 @@
 <section>
+
+
+<audio controls>
+  <source src="ThisIsTheLife.mp3" type="audio/mp3">
+</audio>
+
+<!-- <div id="bg-music">
+  <audio id="song" src="ThisIsTheLife.mp3" autoplay></audio>
+</div> -->
+
   <div id="container">
   <div class="mountains">
     <svg id="svg-mountain-draw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
@@ -120,8 +130,18 @@
       </g>
     </svg> -->
 
+<!-- NEW CIRCLES -->
+    <svg id="svg-new-circles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+      <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <g id="Circles-Copy">
+          <!-- <path id="Bkg" fill="#1D2A3F" d="M0 0h1024v768H0z"/> -->
+          <path id="RPMCircle" fill="#45342C" fill-rule="nonzero" d="M792 195c104.934 0 190 85.066 190 190s-85.066 190-190 190-190-85.066-190-190 85.066-190 190-190zm0 6c-101.62 0-184 82.38-184 184s82.38 184 184 184 184-82.38 184-184-82.38-184-184-184z"/>
+          <path id="SpeedCircle" fill="#45342C" fill-rule="nonzero" d="M232.5 252c61.027 0 110.5 49.025 110.5 109.5S293.527 471 232.5 471 122 421.975 122 361.5 171.473 252 232.5 252zm0 6C174.774 258 128 304.35 128 361.5S174.774 465 232.5 465 337 418.65 337 361.5 290.226 258 232.5 258z"/>
+        </g>
+      </g>
+    </svg>
 
-    
+
 <!-- DASHBOARD -->
 <svg id="svg-main-dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
   <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
@@ -188,8 +208,8 @@
           <path id="Path-15-Copy-10" d="M184.121 121.374l.355 5.99" transform="rotate(-65.494 184.299 124.369)"/>
           <path id="Path-15-Copy-2" d="M5.325 90.788l.35 9.994" transform="rotate(-87.994 5.5 95.785)"/>
         </g>
-        <ellipse id="SpeedCircle" cx="110.987" cy="110.288" stroke="#45342C" stroke-width="6" rx="107.5" ry="106.5"/>
-        <path id="SpeedTop" stroke="#B25B31" stroke-width="6" d="M3 121.48C3 72.842 21.816 38.068 59.447 17.159"/>
+        <!-- <path id="SpeedCircle" fill="#45342C" fill-rule="nonzero" d="M232.5 252c61.027 0 110.5 49.025 110.5 109.5S293.527 471 232.5 471 122 421.975 122 361.5 171.473 252 232.5 252zm0 6C174.774 258 128 304.35 128 361.5S174.774 465 232.5 465 337 418.65 337 361.5 290.226 258 232.5 258z"/>         -->
+          <path id="SpeedTop" stroke="#B25B31" stroke-width="6" d="M3 121.48C3 72.842 21.816 38.068 59.447 17.159"/>
         <ellipse id="SpeedInnerCircle" cx="110.987" cy="110.288" stroke="#324057" stroke-width="2" rx="95.5" ry="94.5"/>
         <g id="SpeedNumbers" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="8" font-weight="normal" transform="translate(29.487 32.788)">
           <text id="0">
@@ -250,8 +270,8 @@
           <path id="Path-15-Copy-8" d="M219.49 2.187l8.428 15.905" transform="rotate(47.006 223.704 10.14)"/>
           <path id="Path-15-Copy-2" d="M9.185 155.739l.63 17.989" transform="rotate(-87.994 9.5 164.733)"/>
         </g>
-        <circle id="RPMCircle" cx="190.384" cy="190.856" r="187" stroke="#45342C" stroke-width="6"/>
-        <path id="RPMTop" stroke="#B25B31" stroke-width="6" d="M38.99 300.876C14.997 267.326 3 230.946 3 191.733c0-39.212 11.747-75.983 35.241-110.31"/>
+        <!-- <path id="RPMCircle" fill="#45342C" fill-rule="nonzero" d="M792 195c104.934 0 190 85.066 190 190s-85.066 190-190 190-190-85.066-190-190 85.066-190 190-190zm0 6c-101.62 0-184 82.38-184 184s82.38 184 184 184 184-82.38 184-184-82.38-184-184-184z"/>         -->
+          <path id="RPMTop" stroke="#B25B31" stroke-width="6" d="M38.99 300.876C14.997 267.326 3 230.946 3 191.733c0-39.212 11.747-75.983 35.241-110.31"/>
         <ellipse id="RPMInnerCircle" cx="189.884" cy="189.856" stroke="#324057" stroke-width="2" rx="170.5" ry="169"/>
         <g id="RPMNumbers" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" transform="translate(43.384 46.856)">
           <text id="1">
@@ -296,6 +316,8 @@
     </g>
   </g>
 </svg>
+
+
   </div>
 </div>
 </section>

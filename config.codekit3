@@ -9,6 +9,22 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/deploy/audio/Motivated.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/audio/Motivated.mp3",
+		"oF": 0
+		},
+	"/deploy/audio/ThisIsTheLife.mp3": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/deploy/audio/ThisIsTheLife.mp3",
+		"oF": 0
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
