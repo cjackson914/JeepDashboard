@@ -25,8 +25,8 @@ export function dashAnimation(){
   .from("#Topo6",{duration:1, drawSVG:0},"topo2")
   .from("#Topo4",{duration:1, drawSVG:0},"topo2")
 
-  .from("#SpeedCircle",{duration:1, alpha:0},"circles")
-  .from("#RPMCircle",{duration:1, alpha:0},"circles")
+  .from("#SpeedCircle",{duration:1, alpha:0, scale:.2},"circles")
+  .from("#RPMCircle",{duration:1, alpha:0, scale:.2},"circles")
   .from("#SpeedInnerCircle",{duration:1, alpha:0},"innercircles")
   .from("#RPMInnerCircle",{duration:1, alpha:0},"innercircles")
   .from("#SpeedLines",{duration:1, alpha:0},"dashlines")
