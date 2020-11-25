@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Motion Demo</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Jeep Dashboard</title>
 </head>
 
 <body>
 
     <section>
+      <div id="container">
       <div class="mountains">
         <svg id="svg-mountain-draw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
           <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -120,7 +125,7 @@
           </g>
         </svg>
     
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
           <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
             <g id="svg-logo">
               <!-- <path id="Bkg" fill="#1D2A3F" d="M0 0h1024v768H0z"/> -->
@@ -128,187 +133,188 @@
               <path id="e2" fill="#83A5C7" fill-rule="nonzero" d="M589.355 375.09c0-10.146-5.6-19.875-18.41-19.875-12.405 0-16.821 8.911-16.821 19.876h35.23zm33.699 20.445h-69.301c0 16.52 6.81 23.37 18.838 23.37 12.01 0 16.019-9.676 16.019-9.676h34.064c0 14.913-20.439 35.058-51.286 34.658-35.264 0-52.495-26.19-52.495-53.187 0-27.006 15.232-58.419 49.278-58.419 29.26 0 54.883 11.277 54.883 63.254z"/>
               <path id="e1" fill="#83A5C7" fill-rule="nonzero" d="M479.067 375.09c0-10.146-5.595-19.875-18.41-19.875-12.413 0-16.82 8.911-16.82 19.876h35.23zm-22.725-42.809c29.263 0 54.892 11.277 54.892 63.254H441.93c0 16.52 6.804 23.37 18.823 23.37 12.022 0 16.025-9.676 16.025-9.676h34.064c0 14.913-20.435 35.058-51.292 34.658-35.246 0-52.476-26.19-52.476-53.187 0-27.006 15.213-58.419 49.268-58.419"/>
               <path id="J" fill="#83A5C7" fill-rule="nonzero" d="M362.078 291h37.337v98.75c0 16.987-7.235 52.614-59.013 52.614-51.784 0-57.402-33.206-57.402-51.81v-18.21h36.132v17.8c0 10.926 7.228 21.04 20.869 21.04 13.647 0 22.077-7.687 22.077-20.63V291"/> -->
-            </g>
+            <!-- </g>
           </g>
-        </svg>
+        </svg> -->
     
     
-    
+        
     <!-- DASHBOARD -->
-        <svg id="svg-main-dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
-          <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
-            <g id="MainDashboard">
-              <path id="Bkg" fill="#1D2A3F" d="M0 0h1024v768H0z"/>
-              <g id="TopoMap" stroke="#324057" stroke-width="2" transform="translate(218 28.066)">
-                <path id="Topo1" d="M90.416 636c30.379-61.436 9.618-113.43 32.78-134.4s43.474-80.682 34.731-135.711c-5.829-36.687-5.829-59.127 0-67.32 5.885-63.42-5.609-107.39-34.48-131.912-43.306-36.782-88.235-23.3-113.31-72.943C-14.94 44.072 38.76 22.753 0 0"/>
-                <path id="Topo2" d="M69 65.609c58.853 1.97 91.637 23.499 98.35 64.585 10.07 61.63-3.773 102.638 6.297 128.736 10.07 26.097 22.86 87.163 22.86 92.822 0 5.66-20.455 86.588-29.157 107.085-8.702 20.498 10.784 20.84 15.707 4.759 4.924-16.081 17.714-31.305 20.991-35.4 3.277-4.093 19.942-26.076 19.942-41.862 0-15.787 2.356-48.625 7.275-56.077 4.92-7.451 8.07-54.417 6.495-59.953-1.576-5.535-19.444-53.786-6.495-65.522 12.95-11.737 17.714-59.957 44.92-55.405 27.204 4.552 32.35-27.176 38.315-36.377 5.965-9.2-17.5-47.391 0-70.864"/>
-                <path id="Topo3" d="M100 8c12.654 26.216 25.58 43.102 38.781 50.658 19.802 11.334 53.935 51.436 53.935 63.539 0 12.102-7.1 84.464 0 113.84 7.1 29.375 2.77 78.949 10.766 67.193 7.996-11.755 7.471-28.468 7.734-39.472.262-11.004-5.404-78.447 5.666-94.975 11.07-16.528 30.022-32.782 20.546-46.586-9.476-13.804-23.18-23.193-33.946-35.003-10.766-11.81-5.79-40.594-21.51-54.1"/>
-                <path id="Topo4" d="M160 7.624c41.015-3.64 64.763 8.653 71.244 36.88 9.72 42.339 28.822 54.426 36.278 66.07 7.455 11.644 15.437-21.432 15.437-39.74 0-18.308-34.108-12.898-24.773-26.33C267.522 31.07 282.06 24.093 297 12.117"/>
-                <path id="Topo5" d="M106 705.59c34.225-37.568 53.507-66.654 57.845-87.258 6.508-30.905 38.65-54.509 42.791-79.092 4.141-24.584 20.53-66.819 34.015-90.113 13.486-23.293 44.248-58.182 44.248-77.793 0-19.61-5.931-71.977 0-87.076 5.93-15.1 15.16-70.216 32.002-42.658 16.841 27.559-4.573 82.525-4.573 91.357 0 8.831-6.857 80.056-6.857 90.38 0 10.323 12.52 46.49-4.026 75.95-16.546 29.458-30.891 63.133-22.445 76.92"/>
-                <path id="Topo6" d="M164.521 692.434c3.653 0 13.146-4.167 28.479-12.5 23-12.5 0-39 0-66.776 0-27.776 24.547-54.958 35.395-72.706 10.849-17.747 22.732-76.021 31.062-66.384 8.33 9.638 4.735 58.855-6.96 82.624-7.797 15.847-7.46 34.669 1.01 56.466"/>
-                <path id="Topo7" d="M438.389 0c-22.533 18.235-33.799 37.264-33.799 57.086 0 29.734 54.916 64.994 54.916 92.255 0 27.261-66.254 26.368-86.91 85.565-20.656 59.197-23.868 88.982-39.782 131.092-10.61 28.074-5.305 60.496 15.914 97.268 10.997 37.255.583 66.86-31.24 88.815-47.737 32.932 10.15 56.598 78.772 75.461S508.883 650.025 529 685"/>
-              </g>
-              <g id="Compass" transform="translate(465 636.066)">
-                <path id="CompassCross" fill="#638E99" fill-rule="nonzero" d="M46.5 29.5v17h14.045v2H46.5v16h-2v-16H29.455v-2H44.5v-17z"/>
-                <text id="N" fill="#EDEAE8" font-family="Montserrat-SemiBold, Montserrat" font-size="22" font-weight="500">
-                  <tspan x="37" y="21.934">N</tspan>
-                </text>
-                <text id="E" fill="#FFF" font-family="Montserrat-SemiBold, Montserrat" font-size="22" font-weight="500">
-                  <tspan x="67" y="54.934">E</tspan>
-                </text>
-                <text id="S" fill="#FFF" font-family="Montserrat-SemiBold, Montserrat" font-size="22" font-weight="500">
-                  <tspan x="39" y="87.934">S</tspan>
-                </text>
-                <text id="W" fill="#FFF" font-family="Montserrat-SemiBold, Montserrat" font-size="22" font-weight="500">
-                  <tspan x="0" y="54.934">W</tspan>
-                </text>
-              </g>
-              <text id="Time" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="42" font-weight="normal">
-                <tspan x="866.563" y="79.066">2:32</tspan> <tspan x="946.867" y="79.066" font-size="21">PM</tspan>
+    <svg id="svg-main-dashboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+      <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <g id="MainDashboard">
+          <!-- <path id="Bkg" fill="#1D2A3F" d="M0 0h1024v768H0z"/> -->
+          <g id="TopoMap" stroke="#324057" stroke-width="2" transform="translate(218 28.066)">
+            <path id="Topo1" d="M90.416 636c30.379-61.436 9.618-113.43 32.78-134.4s43.474-80.682 34.731-135.711c-5.829-36.687-5.829-59.127 0-67.32 5.885-63.42-5.609-107.39-34.48-131.912-43.306-36.782-88.235-23.3-113.31-72.943C-14.94 44.072 38.76 22.753 0 0"/>
+            <path id="Topo2" d="M69 65.609c58.853 1.97 91.637 23.499 98.35 64.585 10.07 61.63-3.773 102.638 6.297 128.736 10.07 26.097 22.86 87.163 22.86 92.822 0 5.66-20.455 86.588-29.157 107.085-8.702 20.498 10.784 20.84 15.707 4.759 4.924-16.081 17.714-31.305 20.991-35.4 3.277-4.093 19.942-26.076 19.942-41.862 0-15.787 2.356-48.625 7.275-56.077 4.92-7.451 8.07-54.417 6.495-59.953-1.576-5.535-19.444-53.786-6.495-65.522 12.95-11.737 17.714-59.957 44.92-55.405 27.204 4.552 32.35-27.176 38.315-36.377 5.965-9.2-17.5-47.391 0-70.864"/>
+            <path id="Topo3" d="M100 8c12.654 26.216 25.58 43.102 38.781 50.658 19.802 11.334 53.935 51.436 53.935 63.539 0 12.102-7.1 84.464 0 113.84 7.1 29.375 2.77 78.949 10.766 67.193 7.996-11.755 7.471-28.468 7.734-39.472.262-11.004-5.404-78.447 5.666-94.975 11.07-16.528 30.022-32.782 20.546-46.586-9.476-13.804-23.18-23.193-33.946-35.003-10.766-11.81-5.79-40.594-21.51-54.1"/>
+            <path id="Topo4" d="M160 7.624c41.015-3.64 64.763 8.653 71.244 36.88 9.72 42.339 28.822 54.426 36.278 66.07 7.455 11.644 15.437-21.432 15.437-39.74 0-18.308-34.108-12.898-24.773-26.33C267.522 31.07 282.06 24.093 297 12.117"/>
+            <path id="Topo5" d="M106 705.59c34.225-37.568 53.507-66.654 57.845-87.258 6.508-30.905 38.65-54.509 42.791-79.092 4.141-24.584 20.53-66.819 34.015-90.113 13.486-23.293 44.248-58.182 44.248-77.793 0-19.61-5.931-71.977 0-87.076 5.93-15.1 15.16-70.216 32.002-42.658 16.841 27.559-4.573 82.525-4.573 91.357 0 8.831-6.857 80.056-6.857 90.38 0 10.323 12.52 46.49-4.026 75.95-16.546 29.458-30.891 63.133-22.445 76.92"/>
+            <path id="Topo6" d="M164.521 692.434c3.653 0 13.146-4.167 28.479-12.5 23-12.5 0-39 0-66.776 0-27.776 24.547-54.958 35.395-72.706 10.849-17.747 22.732-76.021 31.062-66.384 8.33 9.638 4.735 58.855-6.96 82.624-7.797 15.847-7.46 34.669 1.01 56.466"/>
+            <path id="Topo7" d="M438.389 0c-22.533 18.235-33.799 37.264-33.799 57.086 0 29.734 54.916 64.994 54.916 92.255 0 27.261-66.254 26.368-86.91 85.565-20.656 59.197-23.868 88.982-39.782 131.092-10.61 28.074-5.305 60.496 15.914 97.268 10.997 37.255.583 66.86-31.24 88.815-47.737 32.932 10.15 56.598 78.772 75.461S508.883 650.025 529 685"/>
+          </g>
+          <g id="Compass" transform="translate(465 636.066)">
+            <path id="CompassCross" fill="#638E99" fill-rule="nonzero" d="M46.5 29.5v17h14.045v2H46.5v16h-2v-16H29.455v-2H44.5v-17z"/>
+            <text id="N" fill="#EDEAE8" font-family="Montserrat-SemiBold, Montserrat" font-size="22" font-weight="500">
+              <tspan x="37" y="21.934">N</tspan>
+            </text>
+            <text id="E" fill="#FFF" font-family="Montserrat-SemiBold, Montserrat" font-size="22" font-weight="500">
+              <tspan x="67" y="54.934">E</tspan>
+            </text>
+            <text id="S" fill="#FFF" font-family="Montserrat-SemiBold, Montserrat" font-size="22" font-weight="500">
+              <tspan x="39" y="87.934">S</tspan>
+            </text>
+            <text id="W" fill="#FFF" font-family="Montserrat-SemiBold, Montserrat" font-size="22" font-weight="500">
+              <tspan x="0" y="54.934">W</tspan>
+            </text>
+          </g>
+          <text id="Time" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="42" font-weight="normal">
+            <tspan x="866.563" y="79.066">2:32</tspan> <tspan x="946.867" y="79.066" font-size="21">PM</tspan>
+          </text>
+          <text id="Date" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="22" font-weight="normal">
+            <tspan x="866.434" y="111.066">SAT 9 DEC</tspan>
+          </text>
+          <g id="FuelGroup" transform="translate(674 573.274)">
+            <path id="FuelBtm" stroke="#15445C" stroke-width="6" d="M6.721 0C81.118 41.333 155.211 41.333 229 0"/>
+            <path id="FuelTop" stroke="#638E99" stroke-width="6" d="M6.721 0C62.76 31.388 120.15 38.713 178.893 21.974"/>
+            <g id="FuelNumbers" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" transform="translate(0 7.726)">
+              <text id="E">
+                <tspan x="0" y="12">E</tspan>
               </text>
-              <text id="Date" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="22" font-weight="normal">
-                <tspan x="866.434" y="111.066">SAT 9 DEC</tspan>
+              <text id="F">
+                <tspan x="229" y="13">F</tspan>
               </text>
-              <g id="FuelGroup" transform="translate(674 573.274)">
-                <path id="FuelBtm" stroke="#15445C" stroke-width="6" d="M6.721 0C81.118 41.333 155.211 41.333 229 0"/>
-                <path id="FuelTop" stroke="#638E99" stroke-width="6" d="M6.721 0C62.76 31.388 120.15 38.713 178.893 21.974"/>
-                <g id="FuelNumbers" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" transform="translate(0 7.726)">
-                  <text id="E">
-                    <tspan x="0" y="12">E</tspan>
-                  </text>
-                  <text id="F">
-                    <tspan x="229" y="13">F</tspan>
-                  </text>
-                  <text id="1/2">
-                    <tspan x="110" y="42">1/2</tspan>
-                  </text>
-                </g>
-              </g>
-              <g id="SpeedGroup" transform="translate(121.513 251.212)">
-                <g id="SpeedLines" stroke="#B25B31" transform="translate(14.487 15)">
-                  <path id="Path-15" d="M95.158 1l.21 5.996" transform="rotate(2.006 95.263 3.998)"/>
-                  <path id="Path-15-Copy-11" d="M66.101 5.065l3.961 9.182" transform="rotate(2.006 68.082 9.656)"/>
-                  <path id="Path-15-Copy" d="M186.325 90.788l.35 9.994" transform="rotate(-87.994 186.5 95.785)"/>
-                  <path id="Path-15-Copy-3" d="M23.03 36.242l2.033 9.791" transform="rotate(-42.994 24.046 41.137)"/>
-                  <path id="Path-15-Copy-4" d="M168.457 143.124l2.539 9.672" transform="rotate(-42.994 169.726 147.96)"/>
-                  <path id="Path-15-Copy-5" d="M169.386 36.643l-.045 10" transform="rotate(47.006 169.363 41.643)"/>
-                  <path id="Path-15-Copy-8" d="M121.978 5.614l4.682 8.836" transform="rotate(47.006 124.319 10.032)"/>
-                  <path id="Path-15-Copy-12" d="M149.604 17.857l1.315 5.854" transform="rotate(47.006 150.261 20.784)"/>
-                  <path id="Path-15-Copy-9" d="M38.745 21.057l6 .059" transform="rotate(47.006 41.745 21.087)"/>
-                  <path id="Path-15-Copy-6" d="M184.243 63.022l.21 5.996" transform="rotate(69.506 184.348 66.02)"/>
-                  <path id="Path-15-Copy-7" d="M7.547 63.022l.21 5.996" transform="rotate(-65.494 7.652 66.02)"/>
-                  <path id="Path-15-Copy-10" d="M184.121 121.374l.355 5.99" transform="rotate(-65.494 184.299 124.369)"/>
-                  <path id="Path-15-Copy-2" d="M5.325 90.788l.35 9.994" transform="rotate(-87.994 5.5 95.785)"/>
-                </g>
-                <ellipse id="SpeedCircle" cx="110.987" cy="110.288" stroke="#45342C" stroke-width="6" rx="107.5" ry="106.5"/>
-                <path id="SpeedTop" stroke="#B25B31" stroke-width="6" d="M3 121.48C3 72.842 21.816 38.068 59.447 17.159"/>
-                <ellipse id="SpeedInnerCircle" cx="110.987" cy="110.288" stroke="#324057" stroke-width="2" rx="95.5" ry="94.5"/>
-                <g id="SpeedNumbers" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="8" font-weight="normal" transform="translate(29.487 32.788)">
-                  <text id="0">
-                    <tspan x="0" y="81">0</tspan>
-                  </text>
-                  <text id="20">
-                    <tspan x="16" y="35">20</tspan>
-                  </text>
-                  <text id="40">
-                    <tspan x="54" y="8">40</tspan>
-                  </text>
-                  <text id="60">
-                    <tspan x="100" y="8">60</tspan>
-                  </text>
-                  <text id="80">
-                    <tspan x="138" y="36">80</tspan>
-                  </text>
-                  <text id="100">
-                    <tspan x="149" y="81">100</tspan>
-                  </text>
-                  <text id="120">
-                    <tspan x="133" y="125">120</tspan>
-                  </text>
-                </g>
-                <text id="mph" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="14" font-weight="normal">
-                  <tspan x="95.487" y="140.788">mph</tspan>
-                </text>
-                <text id="34" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="57" font-weight="normal">
-                  <tspan x="75.487" y="119.788">34</tspan>
-                </text>
-              </g>
-              <path id="Mountain" fill="#1D2A3F" stroke="#638E99" stroke-width="4" d="M1 438.413l100.817-101.347 86.414 101.347 43.068-29.123L343 502.066"/>
-              <text id="ALT-7,538-ft" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="18" font-weight="normal">
-                <tspan x="193.36" y="502.066">ALT 7,538 ft</tspan> 
+              <text id="1/2">
+                <tspan x="110" y="42">1/2</tspan>
               </text>
-              <text id="72º" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="26" font-weight="normal">
-                <tspan x="95" y="427.066">72º</tspan>
-              </text>
-              <g id="Sun" stroke="#FFF" transform="translate(60 406.589)">
-                <circle id="Oval" cx="13" cy="13.411" r="6.5"/>
-                <path id="Path-14" d="M13.5 4.411v-4"/>
-                <path id="Path-14-Copy" d="M13.5 26.411v-4"/>
-                <path id="Path-14" d="M23.5 15.411v-4" transform="rotate(-90 23.5 13.411)"/>
-                <path id="Path-14-Copy" d="M2.5 15.411v-4" transform="rotate(-90 2.5 13.411)"/>
-                <path id="Path-14" d="M20 19.411l2 2"/>
-                <path id="Path-14-Copy" d="M5 4.411l2 2"/>
-                <path id="Path-14" d="M21 4.411l-2 2"/>
-                <path id="Path-14-Copy" d="M7 20.411l-2 2"/>
-              </g>
-              <g id="RPMGroup" transform="translate(601.616 194.144)">
-                <g id="RPMLines" stroke="#B25B31" transform="translate(17.732 27)">
-                  <path id="Path-15-Copy-11" d="M119.557 1l7.13 16.528" transform="rotate(2.006 123.122 9.264)"/>
-                  <path id="Path-15-Copy" d="M334.461 155.739l.63 17.989" transform="rotate(-87.994 334.776 164.733)"/>
-                  <path id="Path-15-Copy-3" d="M40.105 58.206l3.659 17.625" transform="rotate(-42.994 41.934 67.018)"/>
-                  <path id="Path-15-Copy-4" d="M301.454 248.27l4.57 17.41" transform="rotate(-42.994 303.74 256.975)"/>
-                  <path id="Path-15-Copy-5" d="M303.146 59.928l-.081 18" transform="rotate(47.006 303.105 68.928)"/>
-                  <path id="Path-15-Copy-13" d="M41.146 247.928l-.081 18" transform="rotate(47.006 41.105 256.928)"/>
-                  <path id="Path-15-Copy-8" d="M219.49 2.187l8.428 15.905" transform="rotate(47.006 223.704 10.14)"/>
-                  <path id="Path-15-Copy-2" d="M9.185 155.739l.63 17.989" transform="rotate(-87.994 9.5 164.733)"/>
-                </g>
-                <circle id="RPMCircle" cx="190.384" cy="190.856" r="187" stroke="#45342C" stroke-width="6"/>
-                <path id="RPMTop" stroke="#B25B31" stroke-width="6" d="M38.99 300.876C14.997 267.326 3 230.946 3 191.733c0-39.212 11.747-75.983 35.241-110.31"/>
-                <ellipse id="RPMInnerCircle" cx="189.884" cy="189.856" stroke="#324057" stroke-width="2" rx="170.5" ry="169"/>
-                <g id="RPMNumbers" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" transform="translate(43.384 46.856)">
-                  <text id="1">
-                    <tspan x="27" y="230">1</tspan>
-                  </text>
-                  <text id="2">
-                    <tspan x="0" y="147">2</tspan>
-                  </text>
-                  <text id="3">
-                    <tspan x="30" y="61">3</tspan>
-                  </text>
-                  <text id="4">
-                    <tspan x="102" y="12">4</tspan>
-                  </text>
-                  <text id="5">
-                    <tspan x="190" y="13">5</tspan>
-                  </text>
-                  <text id="6">
-                    <tspan x="261" y="68">6</tspan>
-                  </text>
-                  <text id="7">
-                    <tspan x="287" y="149">7</tspan>
-                  </text>
-                  <text id="8">
-                    <tspan x="258" y="232">8</tspan>
-                  </text>
-                </g>
-                <text id="PRND" font-family="Montserrat-Regular, Montserrat" font-size="22" font-weight="normal">
-                  <tspan x="200.22" y="160.922" fill="#FFF">P</tspan> <tspan x="200.22" y="183.922" fill="#FFF">R</tspan> <tspan x="200.22" y="206.922" fill="#FFF">N</tspan> <tspan x="199.384" y="231.46" fill="#B25B31" font-family="Montserrat-SemiBold, Montserrat" font-weight="500">D</tspan>
-                </text>
-                <path id="RPMLine" stroke="#979797" stroke-linecap="square" stroke-width="2" d="M190.884 121.422v129"/>
-                <text id="x1000" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="14" font-weight="normal">
-                  <tspan x="130.528" y="201.32">x1000</tspan> <tspan x="137.318" y="217.32">RPM</tspan>
-                </text>
-                <text id="3RPM" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="42" font-weight="normal">
-                  <tspan x="157.384" y="180.922">3</tspan>
-                </text>
-              </g>
-              <path id="NavPathOrange" stroke="#B25B31" stroke-width="3" d="M471.894 349.903c4.671-63.183 14.088-99.921 28.25-110.214 21.243-15.44 91.856-16.89 91.856-78.623 0-61.732-13.744-64.146-13.744-82.854 0-12.472 4.581-23.964 13.744-34.477"/>
-              <path id="NavPathBlue" stroke="#366780" stroke-width="3" d="M340 656.066c2.89-50.024 9.536-79.748 19.938-89.174 15.604-14.14 53.663-13.845 67.472-72 13.81-58.156 54.156-60.777 43.96-148.826"/>
-              <path id="Arrow" fill="#366780" d="M473 334.066l19 37h-.244L473 357l-18.756 14.066H454z"/>
             </g>
           </g>
-        </svg>
+          <g id="SpeedGroup" transform="translate(121.513 251.212)">
+            <g id="SpeedLines" stroke="#B25B31" transform="translate(14.487 15)">
+              <path id="Path-15" d="M95.158 1l.21 5.996" transform="rotate(2.006 95.263 3.998)"/>
+              <path id="Path-15-Copy-11" d="M66.101 5.065l3.961 9.182" transform="rotate(2.006 68.082 9.656)"/>
+              <path id="Path-15-Copy" d="M186.325 90.788l.35 9.994" transform="rotate(-87.994 186.5 95.785)"/>
+              <path id="Path-15-Copy-3" d="M23.03 36.242l2.033 9.791" transform="rotate(-42.994 24.046 41.137)"/>
+              <path id="Path-15-Copy-4" d="M168.457 143.124l2.539 9.672" transform="rotate(-42.994 169.726 147.96)"/>
+              <path id="Path-15-Copy-5" d="M169.386 36.643l-.045 10" transform="rotate(47.006 169.363 41.643)"/>
+              <path id="Path-15-Copy-8" d="M121.978 5.614l4.682 8.836" transform="rotate(47.006 124.319 10.032)"/>
+              <path id="Path-15-Copy-12" d="M149.604 17.857l1.315 5.854" transform="rotate(47.006 150.261 20.784)"/>
+              <path id="Path-15-Copy-9" d="M38.745 21.057l6 .059" transform="rotate(47.006 41.745 21.087)"/>
+              <path id="Path-15-Copy-6" d="M184.243 63.022l.21 5.996" transform="rotate(69.506 184.348 66.02)"/>
+              <path id="Path-15-Copy-7" d="M7.547 63.022l.21 5.996" transform="rotate(-65.494 7.652 66.02)"/>
+              <path id="Path-15-Copy-10" d="M184.121 121.374l.355 5.99" transform="rotate(-65.494 184.299 124.369)"/>
+              <path id="Path-15-Copy-2" d="M5.325 90.788l.35 9.994" transform="rotate(-87.994 5.5 95.785)"/>
+            </g>
+            <ellipse id="SpeedCircle" cx="110.987" cy="110.288" stroke="#45342C" stroke-width="6" rx="107.5" ry="106.5"/>
+            <path id="SpeedTop" stroke="#B25B31" stroke-width="6" d="M3 121.48C3 72.842 21.816 38.068 59.447 17.159"/>
+            <ellipse id="SpeedInnerCircle" cx="110.987" cy="110.288" stroke="#324057" stroke-width="2" rx="95.5" ry="94.5"/>
+            <g id="SpeedNumbers" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="8" font-weight="normal" transform="translate(29.487 32.788)">
+              <text id="0">
+                <tspan x="0" y="81">0</tspan>
+              </text>
+              <text id="20">
+                <tspan x="16" y="35">20</tspan>
+              </text>
+              <text id="40">
+                <tspan x="54" y="8">40</tspan>
+              </text>
+              <text id="60">
+                <tspan x="100" y="8">60</tspan>
+              </text>
+              <text id="80">
+                <tspan x="138" y="36">80</tspan>
+              </text>
+              <text id="100">
+                <tspan x="149" y="81">100</tspan>
+              </text>
+              <text id="120">
+                <tspan x="133" y="125">120</tspan>
+              </text>
+            </g>
+            <text id="mph" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="14" font-weight="normal">
+              <tspan x="95.487" y="140.788">mph</tspan>
+            </text>
+            <text id="speed-34" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="57" font-weight="normal">
+              <tspan x="75.487" y="119.788">34</tspan>
+            </text>
+          </g>
+          <path id="Mountain" fill="#1D2A3F" stroke="#638E99" stroke-width="4" d="M1 438.413l100.817-101.347 86.414 101.347 43.068-29.123L343 502.066"/>
+          <text id="ALT" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="18" font-weight="normal">
+            <tspan x="193.36" y="502.066">ALT 7,538 ft</tspan> 
+          </text>
+          <text id="temp-72º" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="26" font-weight="normal">
+            <tspan x="95" y="427.066">72º</tspan>
+          </text>
+          <g id="Sun" stroke="#FFF" transform="translate(60 406.589)">
+            <circle id="Oval" cx="13" cy="13.411" r="6.5"/>
+            <path id="Path-14" d="M13.5 4.411v-4"/>
+            <path id="Path-14-Copy" d="M13.5 26.411v-4"/>
+            <path id="Path-14" d="M23.5 15.411v-4" transform="rotate(-90 23.5 13.411)"/>
+            <path id="Path-14-Copy" d="M2.5 15.411v-4" transform="rotate(-90 2.5 13.411)"/>
+            <path id="Path-14" d="M20 19.411l2 2"/>
+            <path id="Path-14-Copy" d="M5 4.411l2 2"/>
+            <path id="Path-14" d="M21 4.411l-2 2"/>
+            <path id="Path-14-Copy" d="M7 20.411l-2 2"/>
+          </g>
+          <g id="RPMGroup" transform="translate(601.616 194.144)">
+            <g id="RPMLines" stroke="#B25B31" transform="translate(17.732 27)">
+              <path id="Path-15-Copy-11" d="M119.557 1l7.13 16.528" transform="rotate(2.006 123.122 9.264)"/>
+              <path id="Path-15-Copy" d="M334.461 155.739l.63 17.989" transform="rotate(-87.994 334.776 164.733)"/>
+              <path id="Path-15-Copy-3" d="M40.105 58.206l3.659 17.625" transform="rotate(-42.994 41.934 67.018)"/>
+              <path id="Path-15-Copy-4" d="M301.454 248.27l4.57 17.41" transform="rotate(-42.994 303.74 256.975)"/>
+              <path id="Path-15-Copy-5" d="M303.146 59.928l-.081 18" transform="rotate(47.006 303.105 68.928)"/>
+              <path id="Path-15-Copy-13" d="M41.146 247.928l-.081 18" transform="rotate(47.006 41.105 256.928)"/>
+              <path id="Path-15-Copy-8" d="M219.49 2.187l8.428 15.905" transform="rotate(47.006 223.704 10.14)"/>
+              <path id="Path-15-Copy-2" d="M9.185 155.739l.63 17.989" transform="rotate(-87.994 9.5 164.733)"/>
+            </g>
+            <circle id="RPMCircle" cx="190.384" cy="190.856" r="187" stroke="#45342C" stroke-width="6"/>
+            <path id="RPMTop" stroke="#B25B31" stroke-width="6" d="M38.99 300.876C14.997 267.326 3 230.946 3 191.733c0-39.212 11.747-75.983 35.241-110.31"/>
+            <ellipse id="RPMInnerCircle" cx="189.884" cy="189.856" stroke="#324057" stroke-width="2" rx="170.5" ry="169"/>
+            <g id="RPMNumbers" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="12" font-weight="normal" transform="translate(43.384 46.856)">
+              <text id="1">
+                <tspan x="27" y="230">1</tspan>
+              </text>
+              <text id="2">
+                <tspan x="0" y="147">2</tspan>
+              </text>
+              <text id="3">
+                <tspan x="30" y="61">3</tspan>
+              </text>
+              <text id="4">
+                <tspan x="102" y="12">4</tspan>
+              </text>
+              <text id="5">
+                <tspan x="190" y="13">5</tspan>
+              </text>
+              <text id="6">
+                <tspan x="261" y="68">6</tspan>
+              </text>
+              <text id="7">
+                <tspan x="287" y="149">7</tspan>
+              </text>
+              <text id="8">
+                <tspan x="258" y="232">8</tspan>
+              </text>
+            </g>
+            <text id="PRND" font-family="Montserrat-Regular, Montserrat" font-size="22" font-weight="normal">
+              <tspan x="200.22" y="160.922" fill="#FFF">P</tspan> <tspan x="200.22" y="183.922" fill="#FFF">R</tspan> <tspan x="200.22" y="206.922" fill="#FFF">N</tspan> <tspan x="199.384" y="231.46" fill="#B25B31" font-family="Montserrat-SemiBold, Montserrat" font-weight="500">D</tspan>
+            </text>
+            <path id="RPMLine" stroke="#979797" stroke-linecap="square" stroke-width="2" d="M190.884 121.422v129"/>
+            <text id="x1000" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="14" font-weight="normal">
+              <tspan x="130.528" y="201.32">x1000</tspan> <tspan x="137.318" y="217.32">RPM</tspan>
+            </text>
+            <text id="RPM-3" fill="#FFF" font-family="Montserrat-Regular, Montserrat" font-size="42" font-weight="normal">
+              <tspan x="157.384" y="180.922">3</tspan>
+            </text>
+          </g>
+          <path id="NavPathOrange" stroke="#B25B31" stroke-width="3" d="M471.894 349.903c4.671-63.183 14.088-99.921 28.25-110.214 21.243-15.44 91.856-16.89 91.856-78.623 0-61.732-13.744-64.146-13.744-82.854 0-12.472 4.581-23.964 13.744-34.477"/>
+          <path id="NavPathBlue" stroke="#366780" stroke-width="3" d="M340 656.066c2.89-50.024 9.536-79.748 19.938-89.174 15.604-14.14 53.663-13.845 67.472-72 13.81-58.156 54.156-60.777 43.96-148.826"/>
+          <path id="Arrow" fill="#366780" d="M473 334.066l19 37h-.244L473 357l-18.756 14.066H454z"/>
+        </g>
+      </g>
+    </svg>
       </div>
+    </div>
     </section>
 
     <script type="module" src="js/scripts-min.js"></script>

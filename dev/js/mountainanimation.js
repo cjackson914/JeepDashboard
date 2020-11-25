@@ -1,10 +1,9 @@
 import { gsap } from "gsap";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
+gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin);
 
 MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
-
-gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin);
 
 const mountainTL = gsap.timeline();
 

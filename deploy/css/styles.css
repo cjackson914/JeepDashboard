@@ -382,25 +382,22 @@ textarea {
 body {
   background-color: #fff; }
 
-#mountains {
+#container {
   position: relative; }
-
-#svg-mountain-draw {
-  position: absolute; }
-
-#svg-mountain-intro {
-  position: absolute; }
-
-#svg-logo {
-  position: absolute; }
-
-#svg-grill {
-  position: absolute;
-  visibility: hidden; }
-
-#svg-grill-copy {
-  position: absolute;
-  visibility: hidden; }
-
-#svg-main-dashboard {
-  position: absolute; }
+  #container #svg-mountain-draw {
+    position: absolute; }
+  #container #svg-mountain-intro {
+    position: absolute; }
+  #container #svg-logo {
+    position: absolute; }
+  #container #svg-grill {
+    position: absolute;
+    visibility: hidden; }
+  #container #svg-grill-copy {
+    position: absolute;
+    visibility: hidden; }
+  #container #svg-main-dashboard {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0; }

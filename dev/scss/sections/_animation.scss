@@ -6,9 +6,13 @@ body {
   background-color: $white;
 }
 
-#mountains{
+// #mountains{
+//   position: relative;
+// }
+
+#container{
   position: relative;
-}
+
 
 #svg-mountain-draw{
   position: absolute;
@@ -41,4 +45,10 @@ body {
 
 #svg-main-dashboard{
   position: absolute;
+  width: 100%;
+  top:0;
+  left:0;
+
+  // visibility:hidden;
+}
 }
