@@ -8,6 +8,7 @@ import {GSDevTools} from "gsap/GSDevTools";
 gsap.registerPlugin(GSDevTools);
 
 // var song = $("#song")[0];
+var song = document.getElementById("song");
 
 const mainTL = gsap.timeline();
 mainTL
@@ -17,8 +18,9 @@ mainTL
 .add(grillAnimation())
 .add(dashAnimation());
 
-// function playSound(){
-//     "#song".play();
-// }
+
+function playSound(){
+    song.play();
+}
 
 GSDevTools.create();
