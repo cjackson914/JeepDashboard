@@ -384,6 +384,9 @@ body {
 
 #container {
   position: relative; }
+  #container #svg-start {
+    position: absolute;
+    z-index: 3000; }
   #container #svg-mountain-draw {
     position: absolute; }
   #container #svg-mountain-intro {

@@ -10,9 +10,17 @@ body {
 //   position: relative;
 // }
 
+#start-button{
+
+}
+
 #container{
   position: relative;
 
+  #svg-start{
+    position: absolute;
+    z-index: 3000;
+  }
 
 #svg-mountain-draw{
   position: absolute;

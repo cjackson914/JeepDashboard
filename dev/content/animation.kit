@@ -9,9 +9,26 @@
   <audio id="song" src="ThisIsTheLife.mp3" autoplay></audio>
 </div> -->
 
-<button onclick="playSound()" type="button">Play Audio</button>
+<button id="start-button" onclick="playSound()" type="button">Play Audio</button>
 
   <div id="container">
+
+    <svg id="svg-start" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
+      <g id="Page-1" fill="none" fill-rule="evenodd" stroke="none" stroke-width="1">
+        <g id="StartCircleScreen">
+          <!-- <path id="Bkg" fill="#1D2A3F" d="M0 0h1024v768H0z"/> -->
+          <text id="START" fill="#FFF" font-family="Montserrat-Medium, Montserrat" font-size="22" font-weight="400">
+            <tspan x="476.206" y="402">START</tspan>
+          </text>
+          <text id="ENGINE" fill="#FFF" font-family="Montserrat-Light, Montserrat" font-size="18" font-weight="300">
+            <tspan x="475.694" y="379">ENGINE</tspan>
+          </text>
+          <path id="StartCircle1" fill-rule="nonzero" stroke="#6585A4" stroke-width="5" d="M512 309c41.421 0 75 33.579 75 75s-33.579 75-75 75-75-33.579-75-75 33.579-75 75-75z"/>
+          <path id="StartCircle2" fill-rule="nonzero" stroke="#6585A4" stroke-width="5" d="M512 309c41.421 0 75 33.579 75 75s-33.579 75-75 75-75-33.579-75-75 33.579-75 75-75z"/>
+        </g>
+      </g>
+    </svg>
+    
   <div class="mountains">
     <svg id="svg-mountain-draw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 768">
       <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
