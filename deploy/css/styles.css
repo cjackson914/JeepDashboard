@@ -386,7 +386,8 @@ body {
   position: relative; }
   #container #svg-start {
     position: absolute;
-    z-index: 3000; }
+    z-index: 3000;
+    cursor: pointer; }
   #container #svg-mountain-draw {
     position: absolute; }
   #container #svg-mountain-intro {
@@ -410,3 +411,9 @@ body {
     top: 0;
     left: 0;
     visibility: hidden; }
+  #container #SVG-Settings {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0; }

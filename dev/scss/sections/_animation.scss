@@ -20,7 +20,9 @@ body {
   #svg-start{
     position: absolute;
     z-index: 3000;
+    cursor: pointer;
   }
+
 
 #svg-mountain-draw{
   position: absolute;
@@ -67,4 +69,13 @@ body {
   left:0;
   visibility:hidden;
 }
+
+#SVG-Settings{
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  top:0;
+  left:0;
+}
+
 }
