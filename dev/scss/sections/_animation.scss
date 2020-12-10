@@ -3,19 +3,37 @@
 ============= */
 
 body {
-  background-color: $white;
+  background-color: #7484A0; 
+  
 }
+
+
 
 // #mountains{
 //   position: relative;
 // }
 
-#start-button{
-
+#section-1{
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  grid-template-areas: ". motion .";
+  
+  #container{
+    position: relative;
+      grid-area: motion;
+      height: 100vh;
+      margin-top: 10vh;
+      // // width: 100vh;
+      // // margin-left: -120px;
+      // display: flex;
+      place-items: center;
+      // justify-content: center;
+      
 }
 
-#container{
-  position: relative;
+
+
+
 
   #svg-start{
     position: absolute;

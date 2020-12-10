@@ -4,7 +4,7 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin);
 
-console.log(speedCounter);
+// console.log(speedCounter);
 
 MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
 
@@ -12,28 +12,7 @@ const dashTL = gsap.timeline();
 
 
 
-var counterSpeed = 100;
-// Set this number you want your counter to count up to. Default is 20
-var topSpeed = 34;
-// If yu don't want your speed to start at 0, change it here. Default is 0.
-var speedNumber = 0;
 
-var myVar;
-
-function startTimer(){
-    myVar = setInterval(speedCounter, counterSpeed);
-}
-
-export function speedCounter() {
-	if (speedNumber < topSpeed) {
-        speedNumber++;
-       $("#speedTag").html(speedNumber);
-		// document.getElementById("#speedTag").innerHTML = speedNumber;
-	} else {
-		clearInterval(myVar);
-	}
-	return speedNumber;
-}
 
 
 export function dashAnimation(){
@@ -73,16 +52,18 @@ export function dashAnimation(){
   .from("#FuelBtm",{duration:1, alpha:0, y:-40},"dashlines")
   .from("#FuelNumbers",{duration:1, alpha:0},"drawtoplines")
   .from("#FuelTop",{duration:1, drawSVG:0},"drawtoplines")
-  .from("#SpeedTop",{duration:1, drawSVG:0},"drawtoplines")
+  // .from("#SpeedTop",{duration:1, drawSVG:0},"drawtoplines")
   .from("#RPMTop",{duration:1, drawSVG:0},"drawtoplines")
 
-  .to("#speedTag",{duration:1, alpha:1, onComplete: startTimer},"speednumber")
+  .from("#speedTag",{duration:1, alpha:0},"speednumber")
   .from("#mph",{duration:1, alpha:0},"speednumber")
   .from("#RPMLine",{duration:1, drawSVG:0},"speednumber")
+  .to("#speedTag",{duration:1, onComplete: countIt},"speedcount")
+  .from("#SpeedTop",{duration:3, drawSVG:0})
 
-  .from("#RPM-3",{duration:1, alpha:0, x:15},"RPMcontent")
-  .from("#x1000",{duration:1, alpha:0, x:10},"RPMcontent")
-  .from("#PRND",{duration:1, alpha:0, x:-15},"RPMcontent")
+  .from("#RPM-3",{duration:1, alpha:0, x:15},"speednumber")
+  .from("#x1000",{duration:1, alpha:0, x:10},"speednumber")
+  .from("#PRND",{duration:1, alpha:0, x:-15},"speednumber")
 
   // .from("#Sun",{duration:1, alpha:0, x:100,},"mtncontent")  
   // .from("#temp-72º",{duration:1, alpha:0},"-=.6") 
@@ -105,3 +86,18 @@ export function dashAnimation(){
   return dashTL;
 }
 
+var startCount = 0,
+    endCount,
+    activeIndex = 1,
+    tm = 3,
+    num = { var: startCount },
+    numbers = document.getElementById("speedTag");
+
+function countIt() {
+  activeIndex == 1 ? endCount = 34 : endCount = 34;
+  gsap.to(num, tm, {var: endCount, onUpdate:changeNumber});
+}
+
+function changeNumber() {
+  numbers.innerHTML = (num.var).toFixed();
+}

@@ -23,12 +23,12 @@ mainTL
 .add(mountainAnimation())
 .add(grillAnimation())
 .add(dashAnimation())
-.add(settingsAnimation());
-// .pause();
+.add(settingsAnimation())
+.pause();
 
 $("#svg-start").on("click", function(){
     console.log("click");
     mainTL.play();
 });
 
-GSDevTools.create();
+// GSDevTools.create();

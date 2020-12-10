@@ -380,38 +380,46 @@ textarea {
     Demo
 ============= */
 body {
-  background-color: #fff; }
+  background-color: #7484A0; }
 
-#container {
-  position: relative; }
-  #container #svg-start {
+#section-1 {
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  grid-template-areas: ". motion ."; }
+  #section-1 #container {
+    position: relative;
+    grid-area: motion;
+    height: 100vh;
+    margin-top: 10vh;
+    place-items: center; }
+  #section-1 #svg-start {
     position: absolute;
     z-index: 3000;
     cursor: pointer; }
-  #container #svg-mountain-draw {
+  #section-1 #svg-mountain-draw {
     position: absolute; }
-  #container #svg-mountain-intro {
+  #section-1 #svg-mountain-intro {
     position: absolute; }
-  #container #svg-logo {
+  #section-1 #svg-logo {
     position: absolute; }
-  #container #svg-grill {
+  #section-1 #svg-grill {
     position: absolute;
     visibility: hidden; }
-  #container #svg-grill-copy {
+  #section-1 #svg-grill-copy {
     position: absolute;
     visibility: hidden; }
-  #container #svg-main-dashboard {
+  #section-1 #svg-main-dashboard {
     position: absolute;
     width: 100%;
     top: 0;
     left: 0; }
-  #container #svg-new-circles {
+  #section-1 #svg-new-circles {
     position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     visibility: hidden; }
-  #container #SVG-Settings {
+  #section-1 #SVG-Settings {
     position: absolute;
     z-index: 1000;
     width: 100%;
