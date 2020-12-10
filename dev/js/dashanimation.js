@@ -4,9 +4,37 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 
 gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin);
 
+console.log(speedCounter);
+
 MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
 
 const dashTL = gsap.timeline();
+
+
+
+var counterSpeed = 100;
+// Set this number you want your counter to count up to. Default is 20
+var topSpeed = 34;
+// If yu don't want your speed to start at 0, change it here. Default is 0.
+var speedNumber = 0;
+
+var myVar;
+
+function startTimer(){
+    myVar = setInterval(speedCounter, counterSpeed);
+}
+
+export function speedCounter() {
+	if (speedNumber < topSpeed) {
+        speedNumber++;
+       $("#speedTag").html(speedNumber);
+		//document.getElementById("HC-counter").innerHTML = speedNumber;
+	} else {
+		clearInterval(myVar);
+	}
+	return speedNumber;
+}
+
 
 export function dashAnimation(){
     
@@ -48,7 +76,7 @@ export function dashAnimation(){
   .from("#SpeedTop",{duration:1, drawSVG:0},"drawtoplines")
   .from("#RPMTop",{duration:1, drawSVG:0},"drawtoplines")
 
-  .from("#speed-34",{duration:1, alpha:0},"speednumber")
+  .from("#speedTag",{duration:1, onComplete: startTimer},"speednumber")
   .from("#mph",{duration:1, alpha:0},"speednumber")
   .from("#RPMLine",{duration:1, drawSVG:0},"speednumber")
 
@@ -76,3 +104,4 @@ export function dashAnimation(){
 
   return dashTL;
 }
+

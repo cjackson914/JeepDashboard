@@ -5,6 +5,8 @@ import {mountainAnimation} from "./mountainanimation.js";
 import {grillAnimation} from "./grillanimation.js";
 import {dashAnimation} from "./dashanimation.js";
 import {settingsAnimation} from "./settingsanimation.js";
+// import { speedCounter } from "./speed.js";
+
 
 import {GSDevTools} from "gsap/GSDevTools";
 
@@ -21,12 +23,12 @@ mainTL
 .add(mountainAnimation())
 .add(grillAnimation())
 .add(dashAnimation())
-.add(settingsAnimation())
-.pause();
+.add(settingsAnimation());
+// .pause();
 
 $("#svg-start").on("click", function(){
     console.log("click");
     mainTL.play();
 });
 
-// GSDevTools.create();
+GSDevTools.create();
