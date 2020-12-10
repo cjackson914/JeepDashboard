@@ -18,18 +18,18 @@ export function dashAnimation(){
   .to("#GrillCircle1Solid",{duration:1, fill:"45342C"},"circlecolor")
   .to("#GrillCircle4Solid",{duration:1, fill:"45342C"},"circlecolor")
 
-  .to("#GrillCircle1Solid",{duration:1, morphSVG:"#SpeedCircle"},"topo")
-  .to("#GrillCircle4Solid",{duration:1, morphSVG:"#RPMCircle"},"topo")
+  .to("#GrillCircle1Solid",{duration:.75, morphSVG:"#SpeedCircle"},"topo")
+  .to("#GrillCircle4Solid",{duration:.75, morphSVG:"#RPMCircle"},"topo")
 
 
-  .to("#GrillDivided",{duration:1, alpha:0, scaleY:0, transformOrigin:"0% 50%"},"topo")
-  .from("#Topo5",{duration:1, drawSVG:"40% 40%"},"topo")
-  .from("#Topo2",{duration:1, drawSVG:"65% 65%"},"topo")
-  .from("#Topo3",{duration:1, drawSVG:"52% 52%"},"topo")
-  .from("#Topo7",{duration:.5, drawSVG:"50% 50%"},"topo2")
-  .from("#Topo1",{duration:.5, drawSVG:"40% 40%"},"topo2")
-  .from("#Topo6",{duration:.5, drawSVG:0},"topo2")
-  .from("#Topo4",{duration:.5, drawSVG:0},"topo2")
+  .to("#GrillDivided",{duration:.75, alpha:0, scaleY:0, transformOrigin:"0% 50%"},"topo")
+  .from("#Topo5",{duration:.75, drawSVG:"40% 40%"},"topo")
+  .from("#Topo2",{duration:.75, drawSVG:"65% 65%"},"topo")
+  .from("#Topo3",{duration:.75, drawSVG:"52% 52%"},"topo")
+  .from("#Topo7",{duration:.75, drawSVG:"50% 50%"},"topo2")
+  .from("#Topo1",{duration:.75, drawSVG:"40% 40%"},"topo2")
+  .from("#Topo6",{duration:.75, drawSVG:0},"topo2")
+  .from("#Topo4",{duration:.75, drawSVG:0},"topo2")
 
 
   .from("#SpeedInnerCircle",{duration:1, alpha:0},"innercircles")
