@@ -28,7 +28,7 @@ export function speedCounter() {
 	if (speedNumber < topSpeed) {
         speedNumber++;
        $("#speedTag").html(speedNumber);
-		//document.getElementById("HC-counter").innerHTML = speedNumber;
+		// document.getElementById("#speedTag").innerHTML = speedNumber;
 	} else {
 		clearInterval(myVar);
 	}
@@ -76,7 +76,7 @@ export function dashAnimation(){
   .from("#SpeedTop",{duration:1, drawSVG:0},"drawtoplines")
   .from("#RPMTop",{duration:1, drawSVG:0},"drawtoplines")
 
-  .from("#speedTag",{duration:1, onComplete: startTimer},"speednumber")
+  .to("#speedTag",{duration:1, alpha:1, onComplete: startTimer},"speednumber")
   .from("#mph",{duration:1, alpha:0},"speednumber")
   .from("#RPMLine",{duration:1, drawSVG:0},"speednumber")
 
