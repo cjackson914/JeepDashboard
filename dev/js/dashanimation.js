@@ -26,10 +26,10 @@ export function dashAnimation(){
   .from("#Topo5",{duration:1, drawSVG:"40% 40%"},"topo")
   .from("#Topo2",{duration:1, drawSVG:"65% 65%"},"topo")
   .from("#Topo3",{duration:1, drawSVG:"52% 52%"},"topo")
-  .from("#Topo7",{duration:1, drawSVG:"50% 50%"},"topo2")
-  .from("#Topo1",{duration:1, drawSVG:"40% 40%"},"topo2")
-  .from("#Topo6",{duration:1, drawSVG:0},"topo2")
-  .from("#Topo4",{duration:1, drawSVG:0},"topo2")
+  .from("#Topo7",{duration:.5, drawSVG:"50% 50%"},"topo2")
+  .from("#Topo1",{duration:.5, drawSVG:"40% 40%"},"topo2")
+  .from("#Topo6",{duration:.5, drawSVG:0},"topo2")
+  .from("#Topo4",{duration:.5, drawSVG:0},"topo2")
 
 
   .from("#SpeedInnerCircle",{duration:1, alpha:0},"innercircles")
@@ -60,13 +60,13 @@ export function dashAnimation(){
   .from("#temp-72",{duration:1, alpha:0},"-=.6") 
   .from("#ALT",{duration:1, alpha:0, y:25},"RPMcontent") 
   
-  .from("#Time",{duration:1, alpha:0, scale:1, transformOrigin:"50% bottom"})
-  .from("#Date",{duration:1, alpha:0},"-=.75")
+  .from("#Time",{duration:1, alpha:0, scale:1, transformOrigin:"50% bottom"},"RPMcontent") 
+  .from("#Date",{duration:1, alpha:0},"-=.75","RPMcontent") 
 
-  .from("#NavPathBlue",{duration:1, drawSVG:0})
-  .from("#Arrow",{duration:.5, alpha:0, scaleY:0, transformOrigin:"50% 0%"},"arrow")
-  .from("#Compass",{duration:.5, alpha:0, scaleY:0, transformOrigin:"0% 50%"},"arrow")
-  .from("#NavPathOrange",{duration:1, drawSVG:0},"-=.25")
+  .from("#NavPathBlue",{duration:1, drawSVG:0},"RPMcontent") 
+  .from("#Arrow",{duration:.5, alpha:0, scaleY:0, transformOrigin:"50% 0%"},"arrow","RPMcontent") 
+  .from("#Compass",{duration:.5, alpha:0, scaleY:0, transformOrigin:"0% 50%"},"arrow","RPMcontent") 
+  .from("#NavPathOrange",{duration:1, drawSVG:0},"-=.25","RPMcontent") 
 
   return dashTL;
 }
