@@ -57,7 +57,7 @@ export function dashAnimation(){
 
 
   .from("#Sun",{duration:1, alpha:0, y:450},"RPMcontent")  
-  .from("#temp-72º",{duration:1, alpha:0},"-=.6") 
+  .from("#temp-72",{duration:1, alpha:0},"-=.6") 
   .from("#ALT",{duration:1, alpha:0, y:25},"RPMcontent") 
   
   .from("#Time",{duration:1, alpha:0, scale:1, transformOrigin:"50% bottom"})
