@@ -16,8 +16,6 @@ export function startAnimation(){
   .to("#StartCircle2",{duration:.5, ease:"none", fill:"#B4D9FF"})
   .to("#StartCircleScreen",{duration:.5, alpha:0})
 
-//   playSound();
-
   return startTL;
 }
 

@@ -3,97 +3,74 @@
 ============= */
 
 body {
-  background-color: #7484A0; 
-  
+  background-color: #7484A0;
 }
 
 
-
-// #mountains{
-//   position: relative;
-// }
-
-#section-1{
+#section-1 {
   display: grid;
   grid-template-columns: auto 80% auto;
   grid-template-areas: ". motion .";
-  
-  #container{
+
+  #container {
     position: relative;
-      grid-area: motion;
-      height: 100vh;
-      margin-top: 10vh;
-      // // width: 100vh;
-      // // margin-left: -120px;
-      // display: flex;
-      place-items: center;
-      // justify-content: center;
-      
-}
+    grid-area: motion;
+    height: 100vh;
+    margin-top: 10vh;
+    place-items: center;
+  }
 
-
-
-
-
-  #svg-start{
+  #svg-start {
     position: absolute;
     z-index: 3000;
     cursor: pointer;
   }
 
+  #svg-mountain-draw {
+    position: absolute;
 
-#svg-mountain-draw{
-  position: absolute;
+  }
 
-}
+  #svg-mountain-intro {
+    position: absolute;
 
-#svg-mountain-intro{
-  position: absolute;
+  }
 
-}
+  #svg-logo {
+    position: absolute;
+  }
 
-#svg-logo{
-  position: absolute;
-  // z-index: 1000;
-  // visibility: hidden;
-}
+  #svg-grill {
+    position: absolute;
+    visibility: hidden;
+  }
 
-#svg-grill{
-  position: absolute;
-  visibility: hidden;
-  // #grillRect{
+  #svg-grill-copy {
+    position: absolute;
+    visibility: hidden;
+  }
 
-  // }
-}
+  #svg-main-dashboard {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 
-#svg-grill-copy{
-  position: absolute;
-  visibility: hidden;
-}
+  #svg-new-circles {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+  }
 
-#svg-main-dashboard{
-  position: absolute;
-  width: 100%;
-  top:0;
-  left:0;
-
-  // visibility:hidden;
-}
-
-#svg-new-circles{
-  position: absolute;
-  width: 100%;
-  top:0;
-  left:0;
-  visibility:hidden;
-}
-
-#SVG-Settings{
-  position: absolute;
-  z-index: 1000;
-  width: 100%;
-  top:0;
-  left:0;
-}
+  #SVG-Settings {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 
 }

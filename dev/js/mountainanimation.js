@@ -20,17 +20,6 @@ export function mountainAnimation(){
   .from("#Mtn65Path",{duration:.25, drawSVG:"100% 100%", ease:"none"})
   .from("#Mtn6Path",{duration:1, drawSVG:"100% 100%", ease:"none"},"-=.75")
 
-
-  // .from("#Mtn1",{duration:2, drawSVG:0, ease:"none"})
-  // .from("#Mtn2",{duration:2, drawSVG:"100% 50%", ease:"none"}, "-=.5")
-  // .from("#Mtn3",{duration:2, drawSVG:0, ease:"none"}, "-=.5")
-  // .from("#Mtn35",{duration:2, drawSVG:0, ease:"none"}, "-=1")
-  // .from("#Mtn4",{duration:2, drawSVG:"100% 50%", ease:"none"}, "-=.5")
-  // .from("#Mtn5",{duration:2, drawSVG:0, ease:"none"}, "-=.5")
-  // // .from("#Mtn55",{duration:2, drawSVG:0, ease:"none"}, "-=.5")
-  // .from("#Mtn6",{duration:2, drawSVG:"100% 50%", ease:"none"}, "-=.5")
-  // // .from("#Mtn65",{duration:2, drawSVG:"100% 50%", ease:"none"}, "-=.5")
-
   .from("#svg-mountain-intro", {duration:.01, alpha:0, delay:.5})
   .from("#Bkg",{duration:.5, fill:"#1D2A3F"})
   .from("#Mtn6",{duration:.5, fill:"#1D2A3F"},"-=.35")
@@ -46,7 +35,6 @@ export function mountainAnimation(){
   .to("#Mtn1",{duration:.5, fill:"#1D2A3F", stroke:"#1D2A3F"})
   .to("#Mtn2",{duration:.5, fill:"#1D2A3F", stroke:"#1D2A3F"},"-=.25")
 
-  // .to("#Mtn3",{duration:.5, fill:"#1D2A3F"})
   .to("#Mtn35",{duration:1, fill:"#1D2A3F", stroke:"#1D2A3F"},"-=.8")
   .to("#Mtn4",{duration:1, fill:"#1D2A3F", stroke:"#1D2A3F"},"-=.8")
   .to("#Mtn5",{duration:1, fill:"#1D2A3F", stroke:"#1D2A3F"},"-=.8")
@@ -54,9 +42,6 @@ export function mountainAnimation(){
   .to("#Bkg",{duration:1, fill:"#1D2A3F", stroke:"#1D2A3F"},"-=.8")
   .to("#JeepLogoFront",{duration:.5,fill:"#83A5C7"},"-=1")
 
-
-  // .to("#GrillRect",{duration:1, morphSVG:"#GrillLines", visibility:"visible"});
-  // .to("#p",{duration:1, morphSVG:"#GrillCircle4Solid"}, "logomorph2");
 
   return mountainTL;
 }

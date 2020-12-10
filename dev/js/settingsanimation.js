@@ -40,15 +40,5 @@ export function settingsAnimation(){
   .from("#ROCK-text",{duration:.75, alpha:0, x:50},"rock")
 
 
-
-
-//   .from("#SPORT-Mode",{duration:1, alpha:0, drawSVG:0})
-
-//   .from("#ROCK-Mode",{duration:1, alpha:0})
-
-//   .from("#Mode-Text",{duration:1, alpha:0})
-
-
-
   return settingsTL;
 }
